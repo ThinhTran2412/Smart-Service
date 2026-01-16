@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SmartService.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ffcc0cfbf09edd61987e6d4293b43d7cbe3597a0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c702b5793e752e45619f1afc9f8d128fd5eb2960")]
 [assembly: System.Reflection.AssemblyProductAttribute("SmartService.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SmartService.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

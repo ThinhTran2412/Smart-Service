@@ -27,4 +27,15 @@
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="8.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="..\SmartService.Infrastructure\KnowledgeBase\**\*.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <Target Name="CopyKnowledgeBase" BeforeTargets="Build">
+    <ItemGroup>
+      <KnowledgeBaseFiles Include="..\SmartService.Infrastructure\KnowledgeBase\**\*.json" />
+    </ItemGroup>
+    <Copy SourceFiles="@(KnowledgeBaseFiles)" DestinationFolder="$(OutputPath)\KnowledgeBase\%(RecursiveDir)" />
+  </Target>
+
 </Project>

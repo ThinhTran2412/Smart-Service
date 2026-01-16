@@ -1,6 +1,10 @@
 using SmartService.API.GraphQL;
 using SmartService.Application;
+using SmartService.Application.Abstractions.AI;
+using SmartService.Application.UseCases.AnalyzeServiceRequest;
 using SmartService.Infrastructure;
+using SmartService.Infrastructure.AI.Ollama;
+using SmartService.Infrastructure.KnowledgeBase.Complexity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +14,10 @@ builder.Services.AddGraphQLServices();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddHttpClient<OllamaClient>();
+builder.Services.AddScoped<AnalyzeServiceRequestHandler>();
+
 
 builder.Services
     .AddApplication()

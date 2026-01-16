@@ -24,7 +24,7 @@ public class ServiceRequest : IAggregateRoot
     public Guid CustomerId { get; private set; }
     public Guid CategoryId { get; private set; }
 
-    public string Description { get; private set; }
+    public string? Description { get; private set; }
     public ServiceComplexity Complexity { get; private set; } = null;
     public ServiceStatus Status { get; private set; }
     public Guid? AssignedProviderId { get; private set; }

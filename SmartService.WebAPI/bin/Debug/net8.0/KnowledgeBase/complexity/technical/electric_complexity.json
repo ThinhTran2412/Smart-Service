@@ -1,0 +1,10 @@
+{
+  "subCategoryId": "TECH_ELECTRIC",
+  "levels": [
+    { "level": 1, "criteria": ["Thay thiết bị đơn giản"] },
+    { "level": 2, "criteria": ["Sửa lỗi nhỏ"] },
+    { "level": 3, "criteria": ["Xử lý chập điện cục bộ"] },
+    { "level": 4, "criteria": ["Ảnh hưởng an toàn"] },
+    { "level": 5, "criteria": ["Nguy cơ cháy nổ"] }
+  ]
+}
